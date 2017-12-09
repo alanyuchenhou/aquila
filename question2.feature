@@ -16,4 +16,4 @@ Feature: company classification
       | FRYS FOOD & DRUG 445 S                                   | Fry's Food and Drug | Supermarket       |
       | Mary goes to work out at Joe's Garage                    | Joe's Garage        | Fitness           |
       | Mary went to Macy's with Joe's wife                      | Macy's              | Department store  |
-      | Mary had dinner at Macy's after shopping at Trader Joe's | Trader Joe's        | Grocery store     |
+      | Mary had dinner at Macy's after shopping at Trader Joe's | Trader Joe's        | Department store     |

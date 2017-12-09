@@ -1,5 +1,10 @@
 # aquila
 
+## Development scripts
+To run a common development script, execute one of the following commands:
+- `sudo pip3 install -r requirements.txt`: Installs dependencies and dev dependencies.
+- `python3 -m unittest discover -s .`: Launches the test runner running all tests.
+
 ## Question 1
 Below are some of my open source projects.
 
@@ -63,14 +68,10 @@ A direct solution is to build a lookup table and store it in the database with f
 | Macy's              | Department store  |
 | ...              | ...  |
 
-A crawler can collect the data from a website such as Linkedin Facebook through its API.
+A crawler can collect the data from a website,
+such as Linkedin, Facebook or Google through its API.
 
 ## Question 3
-
-#### Run the test
-To launch the test runner, run this command in project root directory:
-
-`python3 -m unittest discover -s .`.
 
 #### Add a test case
 To add a test case for a new transaction,
