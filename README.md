@@ -38,7 +38,7 @@ Neither of these steps is simple.
 Below is an over view of each step.
 
 #### Extract the company name
-In this stage, a tagger will extract the name of the company from the transaction text description.
+In this stage, the program extracts the name of the company from the transaction text description.
 
 A naive solution is to reduce this problem to the Name Entity Recognition problem,
 and apply a Named Entity Recognizer(NER).
@@ -56,20 +56,13 @@ If neither of these solution has good enough performance on transaction text des
 a dedicated recognizer or tagger trained on transaction text description data is a potential solution
 
 #### Lookup the company industry
-In this stage, a lookup table will return the industry of the company given the name of the company.
-
-A direct solution is to build a lookup table and store it in the database with following structure:
-
-| company name | company industry |
-| --- | --- |
-| AQUILA              | Technology        |
-| PEARLBETA           | Technology        |
-| 7-Eleven            | Convenience store |
-| Macy's              | Department store  |
-| ...              | ...  |
-
-A crawler can collect the data from a website,
-such as Linkedin, Facebook or Google through its API.
+In this stage, the program looks up the company industry
+by calling a company information lookup API with the company name.
+This API can be provided by a third party or in house.
+To build a in house service for this task,
+we can collect company information (name and industry) through an API provided by
+a popular social network such as uch as Linkedin, Facebook,
+and store the data in a database.
 
 ## Question 3
 
